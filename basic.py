@@ -56,8 +56,13 @@ def mark(origin, length, height, layer):
 			li.append(rect((origin[0]+i*length/2.0,origin[1]+j*height/2.0),20,20,layer))
 	return mix(li, layer)
 
+def bounding_box(origin, length, height,layer):
+	rect1 = rect(origin, length+150, height+150, layer)
+	rect2 = rect(origin, length, height, layer)
+	return gdspy.fast_boolean(rect1, rect2, 'xor')
+
 #cell = gdspy.Cell('test')
 #spec = {'width':0.8, 'layer':3}
-#cell.add(mark((0,0),100,100,1))
+#cell.add(bounding_box((0,0),1000,1000,1))
 ##sp = splitter((0,0),length=10,height=20,**spec)
 #gdspy.LayoutViewer()
