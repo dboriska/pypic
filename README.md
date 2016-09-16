@@ -1,18 +1,20 @@
 # Introduction
 
-This is a reposity aimed to design Photonics Integrated Circuts more easily with gdspy. It is more friendly to waveguide optical structure and non-source device design. 
+This is a reposity aimed to design Photonics Integrated Circuts more easily with gdspy and based on [gdspy](https://github.com/heitzmann/gdspy). It is more friendly to waveguide optical structure and non-source device design. 
 
 # Installation
 
 - install Python and pip 
 
-    sudo apt-get install python3 python-pip
+`sudo apt-get install python3 python-pip`
 
 - use pip install gdspy
     
-    sudo pip istall -t gdspy
+`sudo pip istall -t gdspy`
 
 - clone this reposity
 
 
 # Usage
+
+- Import them all!
