@@ -61,8 +61,8 @@ def bounding_box(origin, length, height,layer):
 	rect2 = rect(origin, length, height, layer)
 	return gdspy.fast_boolean(rect1, rect2, 'xor')
 
-#cell = gdspy.Cell('test')
-#spec = {'width':0.8, 'layer':3}
-#cell.add(bounding_box((0,0),1000,1000,1))
-##sp = splitter((0,0),length=10,height=20,**spec)
-#gdspy.LayoutViewer()
+# cell = gdspy.Cell('test')
+# spec = {'width':0.8, 'layer':3}
+# cell.add(bounding_box((0,0),1000,1000,1))
+# sp = splitter((0,0),length=10,height=20,**spec)
+# gdspy.LayoutViewer()
